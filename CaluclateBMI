@@ -1,0 +1,17 @@
+
+def CalculateBMI(height, weight):
+    weitghinLbs = (weight*2.2)*703
+    print(f"Weight",weitghinLbs)
+    heightInInchs = (int(height.split('.')[0])*12) + int((height.split('.')[1]))
+    print("Height",heightInInchs)
+    bmi = weitghinLbs/(heightInInchs * heightInInchs)
+    return bmi
+
+
+
+if __name__ == "__main__":
+    print("Calculate BMI")
+    height = input("Enter Height in Feet")
+    weight = float(input("Enter Weight in kgs")) 
+    result = CalculateBMI(height, weight)
+    print(f"BMI index is {result}")
